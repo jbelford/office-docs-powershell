@@ -1714,6 +1714,10 @@ Accept wildcard characters: False
 ### -WatermarkForAnonymousUsers
 Determines the meeting experience and watermark content of an anonymous user.
 
+Possible values are:
+
+- WatermarkWithDisplayName (default): Anonymous guests are prompted to enter a display name that will be used as their watermark. 
+- JoinWithAudioOnly: Anonymous guests are allowed to join the meeting with audio only.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -1721,7 +1725,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: WatermarkWithDisplayName
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
